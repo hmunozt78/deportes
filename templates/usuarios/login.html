@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+
+{% block titulo %} Pagina Principal de Deportes{% endblock titulo %}
+
+{% block contenido %}
+<header>
+    <h1>Pagina Login de Usuarios</h1>
+</header>
+<main>
+    <section>
+        <form method="post">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" value="Iniciar Sesion">
+        </form>
+    </section>
+</main>
+
+{% endblock contenido %}
